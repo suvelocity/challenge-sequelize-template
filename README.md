@@ -47,11 +47,13 @@ Implementing the next functions:
 #### Insert 
 ``` Model.Insert({... the object containing the value you want to insert}) ```
 * [sequelize create reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-insert-queries)
+  ##### Related Queries
   * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
 
 #### Bulk Insert
 ``` Model.BulkInsert([... array with the objects  you want to insert]) ```
 * [sequelize bulk create reference](https://sequelize.org/master/manual/model-querying-basics.html#creating-in-bulk)
+  ##### Related Queries
   * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
 
 
@@ -59,6 +61,7 @@ Implementing the next functions:
 ``` Model.findAll({ ```
      ```... the object containing the select query condition you want to apply}) ```
 * [sequelize findAll reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-select-queries)
+  ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
   * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
   * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
@@ -67,6 +70,7 @@ Implementing the next functions:
 #### FindOne
 ``` Model.FindOne({... the object containing the select query condition you want to apply}) ```
 * [sequelize findOne reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findone--code-)
+  ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
   * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
   * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
@@ -75,18 +79,21 @@ Implementing the next functions:
 #### FindByPK
 ``` Model.FindByPk(Priority Key) ```
 * [sequelize findByPk reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findbypk--code-)
+  ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
   * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
 
 #### Update
 ``` Model.Update({... the object containing the where condition, that you want to update}) ```
 * [sequelize updete reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-update-queries)
+  ##### Related Queries
   * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
 
 #### Soft/Hard Destroy 
 ``` Model.Destroy ({... the object containing the conditions for the rows that you want to delete, to hard delete add force:true}) ```
 * [sequelize destroy reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-delete-queries)
 * [sequelize paranoid reference](https://sequelize.org/master/manual/paranoid.html)
+  ##### Related Queries
   * [SQL DELETE](https://www.w3schools.com/sql/sql_delete.asp)
   * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
 
@@ -94,6 +101,7 @@ Implementing the next functions:
 ``` Model.Restore ({... the object containing the conditions for the rows that you want to restore}, without object restor all) ``` 
 * [sequelize restor reference](https://sequelize.org/master/manual/paranoid.html#restoring)
 * [sequelize paranoid reference](https://sequelize.org/master/manual/paranoid.html)
+  ##### Related Queries
   * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
 
 

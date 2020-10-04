@@ -57,7 +57,8 @@ Implementing the next functions:
 
 #### FindAll 
 ``` Model.findAll({ ```
-     ```... the object containing the select query condition you want to apply}) ``` [sequelize findAll reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-select-queries)
+     ```... the object containing the select query condition you want to apply}) ```
+* [sequelize findAll reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-select-queries)
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
   * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
   * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)

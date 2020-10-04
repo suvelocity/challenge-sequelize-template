@@ -457,4 +457,52 @@ describe("MySequelize Challenge", () => {
 
     })
   })
+
+  describe('SQL Injection test', () => {
+
+    beforeAll(async () => {
+      await mysqlCon.query("TRUNCATE TABLE `playlists`");
+      await mysqlCon.query("DELETE FROM `users` WHERE id < 10000");
+
+      await mysqlCon.query(`INSERT INTO users (name, email, password, is_admin)
+          VALUES ('Dani', 'dani@gmail.com', '123456789', false),
+          ('Yoni', 'yoni@gmail.com', '987654321', false),
+          ('Ron', 'ron@gmail.com', '192837465', false),
+          ('Dana', 'dana@gmail.com', '918273645', True),
+          ('Yuval', 'yuval@gmail.com', '65748493021', false);`);
+
+      const results = await mysqlCon.query(`SELECT * FROM users`);
+
+      await mysqlCon.query(`INSERT INTO playlists (name, creator)
+          VALUES ('playlist1', ${results[0][0].id}),
+          ('playlist2', ${results[0][2].id}),
+          ('playlist3', ${results[0][2].id}),
+          ('playlist4', ${results[0][2].id}),
+          ('playlist5', ${results[0][4].id});`);
+    })
+
+    afterAll(async () => {
+      await mysqlCon.query("TRUNCATE TABLE `playlists`");
+      await mysqlCon.query("DELETE FROM `users`");
+    });
+
+    test('SQLI with UNION in findByPk()', async () => {
+
+      const Playlist = new MySequelize(mysqlCon, 'playlists')
+
+      let answer
+      try {
+        const hack = await Playlist.findByPk("1' UNION SELECT id, name, password FROM users -- -")
+        answer = hack
+      }
+      catch (err) {
+        answer = err
+      }
+      expect(() => { throw answer }).toThrowError()
+      expect(answer.errno).toBe(1064)
+
+
+
+    })
+  })
 });

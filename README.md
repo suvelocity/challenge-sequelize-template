@@ -42,21 +42,6 @@ Implementing the next functions:
 
 ## Starting The Challenge
 
-### If you are not famillier with SQL syntax:
-
-#### SQL Queries
-* [SQLi Syntax Tutorial] (https://www.sqltutorial.org/)
-* [SQLi SELECT Statement] (https://www.sqltutorial.org/sql-select/)
-* [SQLi WHERE] (https://www.sqltutorial.org/sql-where/)
-* [SQLi ORDER BY] (https://www.sqltutorial.org/sql-order-by/)
-* [SQLi LIMIT] (https://www.sqltutorial.org/sql-limit/)
-* [SQLi INSERT] (https://www.sqltutorial.org/sql-insert/)
-* [SQLi UPDATE] (https://www.sqltutorial.org/sql-update/)
-* [SQLi DELETE] (https://www.sqltutorial.org/sql-delete/)
-
-
-
-
 ### If you are not famillier with Sequelize syntax:
 
 * ``` Model.Insert({... the object containing the value you want to insert}) ``` [sequelize create reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-insert-queries)

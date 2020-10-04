@@ -42,47 +42,71 @@ Implementing the next functions:
 
 ## Starting The Challenge
 
-
 ### If you are not famillier with SQL syntax:
 
 #### SQL Queries
-* [SQL Syntax Tutorial] (https://www.sqltutorial.org/)
-* [SQL SELECT Statement] (https://www.sqltutorial.org/sql-select/)
-* [SQL WHERE] (https://www.sqltutorial.org/sql-where/)
-* [SQL ORDER BY] (https://www.sqltutorial.org/sql-order-by/)
-* [SQL LIMIT] (https://www.sqltutorial.org/sql-limit/)
-* [SQL INSERT] (https://www.sqltutorial.org/sql-insert/)
-* [SQL UPDATE] (https://www.sqltutorial.org/sql-update/)
-* [SQL DELETE] (https://www.sqltutorial.org/sql-delete/)
+* [SQLi Syntax Tutorial] (https://www.sqltutorial.org/)
+* [SQLi SELECT Statement] (https://www.sqltutorial.org/sql-select/)
+* [SQLi WHERE] (https://www.sqltutorial.org/sql-where/)
+* [SQLi ORDER BY] (https://www.sqltutorial.org/sql-order-by/)
+* [SQLi LIMIT] (https://www.sqltutorial.org/sql-limit/)
+* [SQLi INSERT] (https://www.sqltutorial.org/sql-insert/)
+* [SQLi UPDATE] (https://www.sqltutorial.org/sql-update/)
+* [SQLi DELETE] (https://www.sqltutorial.org/sql-delete/)
 
 
 
 
 ### If you are not famillier with Sequelize syntax:
 
-* ``` Model.Insert({... the object containing the value you want to insert}) ```
+* ``` Model.Insert({... the object containing the value you want to insert}) ``` [sequelize create reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-insert-queries)
+  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
 
-* ``` Model.BulkInsert([... array with the objects  you want to insert]) ```
+* ``` Model.BulkInsert([... array with the objects  you want to insert]) ``` [sequelize bulk create reference](https://sequelize.org/master/manual/model-querying-basics.html#creating-in-bulk)
+  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
 
 * ``` Model.findAll({ ```
-     ```... the object containing the value you want to insert}) ```
+     ```... the object containing the select query condition you want to apply}) ``` [sequelize findAll reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-select-queries)
+  * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
+  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
+  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp/)
 
-* FindOne ()
 
-* FindByPk ()
+* ``` Model.FindOne({... the object containing the select query condition you want to apply}) ```  [sequelize findOne reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findone--code-)
+  * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
+  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
+  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp/)
 
-* Update ()
+* ``` Model.FindByPk(Priority Key) ``` [sequelize findByPk reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findbypk--code-)
+  * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
 
-* soft/hard Destroy ()
 
-* Restore ()
+* ``` Model.Update({... the object containing the where condition, that you want to update}) ``` [sequelize updete reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-update-queries)
+  * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
+
+
+* soft/hard Destroy: ``` Model.Destroy ({... the object containing the conditions for the rows that you want to delete, to hard delete add force:true}) ``` [sequelize destroy reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-delete-queries), [sequelize paranoid reference](https://sequelize.org/master/manual/paranoid.html)
+
+* ``` Model.Restor ({... the object containing the conditions for the rows that you want to restore}, without object restor all) ```  [sequelize restor reference](https://sequelize.org/master/manual/paranoid.html#restoring), [sequelize paranoid reference](https://sequelize.org/master/manual/paranoid.html)
+  * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
+
+
 ---
-
 
 ## Submiting The Challenge
 
 ---
 
 ## Usefull Links
+* [SQL Keywords Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp)
+* [SQL Queries Reference](https://www.w3schools.com/sql/sql_quickref.asp)
 
-## Usefull Links
+
+
+
+
+
+

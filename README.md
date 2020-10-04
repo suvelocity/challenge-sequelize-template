@@ -2,7 +2,7 @@
 
 ## Description
 
-In this challenge we will be building basic ORM functionallity base on Sequelize usin mysql2
+In this challenge we will be building basic ORM functionallity base on Sequelize using mysql2
 
 --- 
 
@@ -34,7 +34,7 @@ Implementing the next functions:
 
 2. Run ``` $npm i ```
 
-3. If you want to run the tests locally, connect to your MySql in the [test connection statment](./test.test.js), which is located in the ``` beforeAll() ``` in the main test.
+3. If you want to run the tests locally, connect to your MySql in the test connection statment, which is located in the ``` beforeAll() ``` in the main test. Enter you password and create empty DB called db_test in your machine.
 
 ![sql connection](./ReadMePics/SQLconnection.png)
 
@@ -107,9 +107,54 @@ Implementing the next functions:
 
 ---
 
-## Submiting The Challenge
+## General
+
+### Files and Folders:
+
+## Use The Template!
+
+* main class MySequelize in index.js, which located in the main folder
+
+### Operations:
+* folder called 'Op'. inside the folder you must have the file 'OpSymbols.js' (rest of the files is for your decision)
+
+![Op folder](./ReadMePics/OpFolder.png)
+* 'OpSymbols.js' should export the object 'Op', as in the picture
+
+![Op export](./ReadMePics/OpExport.png)
+
+* so we can require it as follow in the test 
+
+![Op require](./ReadMePics/OpRequire.png)
+
+* and use it this way (like in sequelize...)
+
+![Op use](./ReadMePics/OpUse.png)
+
+
+### Include:
+
+* 'include' statment recieves the folowwing parameters:
+
+![Include params](./ReadMePics/IncludeUse.png)
+
+* 'include' statment should return nested array inside the original object, with key equel to the table name
+
+* ```[TextRow] ``` is a playlist object
+
+![Include params](./ReadMePics/IncludeReturn.png)
+
 
 ---
+
+### Submiting The Challenge
+
+1. The repository must be public and the solution must be in master/main branch
+
+2. Copy the relative url of the repository and paste in the submiting form.
+
+
+--- 
 
 ## Usefull Links
 * [SQL Keywords Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp)

@@ -1,11 +1,7 @@
 const { MySequelize } = require("./mySequelize");
 const mysql = require("mysql2/promise");
-const config = require('./config')
 const { Op } = require('./Op/OpsSymbols')
 
-
-
-// const MySequelize = require('../_cloned-app')
 
 let mysqlCon;
 
@@ -13,10 +9,10 @@ describe("MySequelize Challenge", () => {
   beforeAll(async () => {
 
     mysqlCon = await mysql.createConnection({
-      host: config.host,
-      user: config.user,
-      password: config.password,
-      database: config.database,
+      host: 'localhost',
+      user: 'root',
+      password: null,
+      database: 'db_test',
       multipleStatements: true,
     });
 
@@ -197,9 +193,9 @@ describe("MySequelize Challenge", () => {
       const myResults = await User.findAll({
         include: [
           {
-            table: "playlists",
-            tableForeignKey: "creator",
-            sourceForeignKey: "id",
+            table: "playlists", // joining table name
+            tableForeignKey: "creator", // joining table column name (FK)
+            sourceForeignKey: "id", // parent table column 
           }
         ],
       });

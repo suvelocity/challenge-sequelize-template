@@ -101,6 +101,7 @@ Implementing the next functions:
 ``` Model.Restore ({... the object containing the conditions for the rows that you want to restore}, without object restor all) ``` 
 * [sequelize restor reference](https://sequelize.org/master/manual/paranoid.html#restoring)
 * [sequelize paranoid reference](https://sequelize.org/master/manual/paranoid.html)
+  
   ##### Related Queries
   * [SQL UPDATE](https://www.w3schools.com/sql/sql_update.asp)
 
@@ -108,6 +109,10 @@ Implementing the next functions:
 ---
 
 ## Submiting The Challenge
+### Files and Folders:
+
+ * MySequelize  - /index.js
+const { Op } = require('../_cloned-app/Op/OpsSymbols')
 
 ---
 

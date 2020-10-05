@@ -1,6 +1,6 @@
-const { MySequelize } = require("./mySequelize");
+const { MySequelize } = require("./index");
 const mysql = require("mysql2/promise");
-const { Op } = require('./Op/OpsSymbols')
+const { Op } = require('./Op/OpSymbols')
 
 
 let mysqlCon;

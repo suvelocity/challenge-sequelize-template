@@ -95,7 +95,7 @@ class MySequelize {
         */
     }
 
-    async update(newDetsils, options) {
+    async update(newDetails, options) {
         /*
             Model.update( { name: 'test6', email: 'test6@gmail.com' } , {
                 where: {                                                      // first object containing details to update

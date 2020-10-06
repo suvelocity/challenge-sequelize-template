@@ -48,13 +48,13 @@ Implementing the next functions:
 ``` Model.Insert({... the object containing the value you want to insert}) ```
 * [sequelize create reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-insert-queries)
   ##### Related Queries
-  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
+  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp)
 
 #### Bulk Insert
 ``` Model.BulkInsert([... array with the objects  you want to insert]) ```
 * [sequelize bulk create reference](https://sequelize.org/master/manual/model-querying-basics.html#creating-in-bulk)
   ##### Related Queries
-  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp/)
+  * [SQL INSERT Query Reference](https://www.w3schools.com/sql/sql_insert.asp)
 
 
 #### FindAll 
@@ -63,25 +63,25 @@ Implementing the next functions:
 * [sequelize findAll reference](https://sequelize.org/master/manual/model-querying-basics.html#simple-select-queries)
   ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
-  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
-  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
-  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp/)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp)
+  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp)
+  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp)
 
 #### FindOne
 ``` Model.FindOne({... the object containing the select query condition you want to apply}) ```
 * [sequelize findOne reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findone--code-)
   ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
-  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
-  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp/)
-  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp/)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp)
+  * [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp)
+  * [SQL LIMIT](https://www.w3schools.com/sql/sql_top.asp)
 
 #### FindByPK
 ``` Model.FindByPk(Priority Key) ```
 * [sequelize findByPk reference](https://sequelize.org/master/manual/model-querying-finders.html#-code-findbypk--code-)
   ##### Related Queries
   * [SQL SELECT Statement Reference](https://www.w3schools.com/sql/sql_select.asp)
-  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp/)
+  * [SQL WHERE](https://www.w3schools.com/sql/sql_where.asp)
 
 #### Update
 ``` Model.Update({... the object containing the where condition, that you want to update}) ```
